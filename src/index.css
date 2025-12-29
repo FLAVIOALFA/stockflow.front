@@ -1,0 +1,22 @@
+html,
+body,
+:root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default browser focus outline to prevent weird double-border effects 
+   This allows the Radix UI box-shadow focus ring to show cleanly without interference. */
+*:focus {
+  outline: none;
+}
+
+/* Specifically for inputs if universal selector is too aggressive (though usually safe for modern apps using custom UI kits) */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
